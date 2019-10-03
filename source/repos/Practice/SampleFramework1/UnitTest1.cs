@@ -9,6 +9,7 @@ namespace SampleFramework1
         [TestMethod]
         public void TestMethod1()
         {
+            //git practice
         }
     }
 }
