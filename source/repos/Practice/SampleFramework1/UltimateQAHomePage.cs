@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using System;
+using OpenQA.Selenium;
 
 namespace SampleFramework1
 {
@@ -9,7 +10,23 @@ namespace SampleFramework1
         {
         }
 
-        public bool IsVisible => Logo.Displayed;
+        public bool IsVisible
+        {
+            get
+            {
+                try
+                {
+                  return  Logo.Displayed;
+                }
+                catch (NoSuchElementException)
+                {
+                    return false;
+                    
+                }
+            }
+        }
+
+       
 
       
     }

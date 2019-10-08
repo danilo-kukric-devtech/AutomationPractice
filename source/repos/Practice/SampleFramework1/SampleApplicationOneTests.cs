@@ -12,25 +12,46 @@ namespace SampleFramework1
     public class SampleApplicationOneTests
     {
         private IWebDriver Driver { get; set; }
-        
+        public TestUser TheTestUser { get; private set; }
+
         [TestMethod]
         public void Test1()
         {
-            Driver = GetChromeDriver();
             var sampleApplicationPage = new SampleApplicationPage(Driver);
             sampleApplicationPage.GoTo();
-            Assert.IsTrue(sampleApplicationPage.IsVisible,"Sample application page is not visible");
-
-            var ultimateHomePage = sampleApplicationPage.FillOutFormAndSubmit("Danilo");
+           
+            var ultimateHomePage = sampleApplicationPage.FillOutFormAndSubmit(TheTestUser);
             Assert.IsTrue(ultimateHomePage.IsVisible,"UltimateQA home page is not visible");
-            Driver.Close();
-            Driver.Quit();
+            
         }
-
+        [TestMethod]
+        public void PretendTestNumber2()
+        {
+            var sampleApplicationPage = new SampleApplicationPage(Driver);
+            sampleApplicationPage.GoTo();
+           
+            var ultimateHomePage = sampleApplicationPage.FillOutFormAndSubmit(TheTestUser);
+            Assert.IsFalse(!ultimateHomePage.IsVisible, "UltimateQA home page is not visible");
+        }
+     
         private IWebDriver GetChromeDriver()
         {
             var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             return  new ChromeDriver(path);
+        }
+        [TestInitialize]
+        public void SetupForEverySingleTestMethod()
+        {
+            Driver = GetChromeDriver();
+            TheTestUser = new TestUser();
+            TheTestUser.FirstName = "Danilo";
+            TheTestUser.LastName = "Kukric";
+        }
+        [TestCleanup]
+        public void CleanupAfterEveryTestMethod()
+        {
+            Driver.Close();
+            Driver.Quit();
         }
     }
 }

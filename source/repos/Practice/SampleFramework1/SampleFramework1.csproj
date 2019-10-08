@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="BaseSampeApplicationPage.cs" />
     <Compile Include="SampleApplicationPage.cs" />
+    <Compile Include="TestUser.cs" />
     <Compile Include="UltimateQAHomePage.cs" />
     <Compile Include="SampleApplicationOneTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
