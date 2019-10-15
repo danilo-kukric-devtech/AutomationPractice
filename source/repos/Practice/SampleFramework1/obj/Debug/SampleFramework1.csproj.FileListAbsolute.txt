@@ -11,9 +11,9 @@ C:\Users\danilo.kukric\source\repos\Practice\SampleFramework1\bin\Debug\Microsof
 C:\Users\danilo.kukric\source\repos\Practice\SampleFramework1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 C:\Users\danilo.kukric\source\repos\Practice\SampleFramework1\bin\Debug\WebDriver.xml
 C:\Users\danilo.kukric\source\repos\Practice\SampleFramework1\bin\Debug\WebDriver.Support.xml
-C:\Users\danilo.kukric\source\repos\Practice\SampleFramework1\obj\Debug\SampleFramework1.csprojAssemblyReference.cache
 C:\Users\danilo.kukric\source\repos\Practice\SampleFramework1\obj\Debug\SampleFramework1.csproj.CoreCompileInputs.cache
 C:\Users\danilo.kukric\source\repos\Practice\SampleFramework1\obj\Debug\SampleFramework1.csproj.CopyComplete
 C:\Users\danilo.kukric\source\repos\Practice\SampleFramework1\obj\Debug\SampleFramework1.dll
 C:\Users\danilo.kukric\source\repos\Practice\SampleFramework1\obj\Debug\SampleFramework1.pdb
 C:\Users\danilo.kukric\source\repos\Practice\SampleFramework1\bin\Debug\chromedriver.exe
+C:\Users\danilo.kukric\source\repos\Practice\SampleFramework1\obj\Debug\SampleFramework1.csprojAssemblyReference.cache
